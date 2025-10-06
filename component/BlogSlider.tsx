@@ -218,12 +218,80 @@
 // };
 
 // export default BlogSlider;
+// "use client";
+
+// import React, { useEffect, useState } from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Pagination } from "swiper/modules";
+// import "swiper/css";
+// import { BlogPost, fetchBlogs } from "@/lib/blog";
+
+// const BlogSlider = () => {
+//   const [blogs, setBlogs] = useState<BlogPost[]>([]);
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     const getBlogs = async () => {
+//       try {
+//         const data = await fetchBlogs();
+//         setBlogs(data);
+//       } catch (error) {
+//         console.error("Error fetching blogs:", error);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     getBlogs();
+//   }, []);
+
+//   if (loading) return <p className="text-center">Loading blogs...</p>;
+//   if (!blogs.length) return <p className="text-center">No blogs available</p>;
+
+//   return (
+//     <div className="container">
+//       <Swiper
+//         modules={[Autoplay, Pagination]}
+//         spaceBetween={20}
+//         slidesPerView={3}
+//         autoplay={{ delay: 3000, disableOnInteraction: false }}
+//         pagination={{ clickable: true }}
+//         breakpoints={{
+//           1024: { slidesPerView: 3 },
+//           768: { slidesPerView: 2 },
+//           600: { slidesPerView: 1 },
+//           0: { slidesPerView: 1 },
+//         }}
+//         className="customer-logos">
+//         {blogs.map((blog) => (
+//           <SwiperSlide key={blog.id} className="slide_new">
+//             <a href={`/blog/${blog.slug}`} target="_blank" rel="noreferrer">
+//               <img src={blog.featured_image_url} alt={blog.title} />
+//             </a>
+//             <a
+//               className="icome"
+//               href={`/blog/${blog.slug}`}
+//               target="_blank"
+//               rel="noreferrer">
+//               {blog.title}
+//             </a>
+//           </SwiperSlide>
+//         ))}
+//       </Swiper>
+//     </div>
+//   );
+// };
+
+// export default BlogSlider;
+
 "use client";
 
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+// import "swiper/css/pagination";
 import { BlogPost, fetchBlogs } from "@/lib/blog";
 
 const BlogSlider = () => {
@@ -250,34 +318,42 @@ const BlogSlider = () => {
 
   return (
     <div className="container">
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        spaceBetween={20}
-        slidesPerView={3}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        breakpoints={{
-          1024: { slidesPerView: 3 },
-          768: { slidesPerView: 2 },
-          600: { slidesPerView: 1 },
-          0: { slidesPerView: 1 },
-        }}
-        className="customer-logos">
-        {blogs.map((blog) => (
-          <SwiperSlide key={blog.id} className="slide_new">
-            <a href={`/blog/${blog.slug}`} target="_blank" rel="noreferrer">
-              <img src={blog.featured_image_url} alt={blog.title} />
-            </a>
-            <a
-              className="icome"
-              href={`/blog/${blog.slug}`}
-              target="_blank"
-              rel="noreferrer">
-              {blog.title}
-            </a>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div>
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={20}
+          slidesPerView={3}
+          autoplay={{ delay: 30000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          breakpoints={{
+            1024: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            600: { slidesPerView: 1 },
+            0: { slidesPerView: 1 },
+          }}
+          className="customer-logos">
+          {blogs.map((blog) => (
+            <SwiperSlide key={blog.id} className="slide_new">
+              <a href={`/blog/${blog.slug}`} target="_blank" rel="noreferrer">
+                <img src={blog.featured_image_url} alt={blog.title} />
+              </a>
+              <a
+                className="icome"
+                href={`/blog/${blog.slug}`}
+                target="_blank"
+                rel="noreferrer">
+                {blog.title}
+              </a>
+            </SwiperSlide>
+          ))}
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </Swiper>
+      </div>
     </div>
   );
 };

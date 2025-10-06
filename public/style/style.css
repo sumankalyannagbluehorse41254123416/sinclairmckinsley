@@ -594,23 +594,40 @@ a {
   object-fit: cover;
 }
 
+.customer-logos :is(.swiper-button-prev, .swiper-button-next) svg {
+  height: 16px;
+  background-color: transparent;
+  color: black;
+  z-index: 1234;
+}
+
+.customer-logos .swiper-horizontal .swiper-button-prev,
+.customer-logos .swiper-horizontal .swiper-button-next {
+  background-color: white;
+  height: 25px;
+  width: 24px;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 1234;
+}
+
 .slide_new {
   margin: 20px 0;
-
+  padding: 0 8px;
 }
 
 .icome {
   background-color: white;
   color: #000000 !important;
   font-weight: 600;
-  font-size: 14px;
-  padding: 20px;
+  font-size: 13px;
+  padding: 17px;
   border-bottom-right-radius: 32px;
 }
 
 @media (max-width:1199px) {
   .icome {
-    padding: 14px;
+    padding: 14px 10px;
     font-size: 12px;
   }
 }

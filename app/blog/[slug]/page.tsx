@@ -355,7 +355,7 @@ const BlogDetailPage: FC<{ params: { slug: string } }> = ({ params }) => {
             alt={blogData.title}
             width={1200}
             height={600}
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%" }}
             priority
           />
         </figure>
