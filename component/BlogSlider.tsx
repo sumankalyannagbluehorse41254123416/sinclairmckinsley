@@ -324,7 +324,7 @@ const BlogSlider = () => {
           spaceBetween={20}
           slidesPerView={3}
           autoplay={{ delay: 30000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
