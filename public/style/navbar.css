@@ -966,6 +966,7 @@ html {
 
 .nav-brand img {
   width: 270px;
+  height: auto;
 }
 
 .menu li a {

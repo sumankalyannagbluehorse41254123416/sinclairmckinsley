@@ -200,6 +200,7 @@ a {
   position: relative;
   line-height: 45px;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .right_mark li::before {

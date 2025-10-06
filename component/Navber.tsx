@@ -194,7 +194,7 @@ const Navbar: FC = () => {
     };
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 991);
       // Close menu when resizing to desktop
       if (window.innerWidth > 768) {
         setIsMenuOpen(false);
@@ -256,9 +256,9 @@ const Navbar: FC = () => {
         <div className="container">
           <nav id="navigation1" className={`navigation ${navigationClass}`}>
             <div className="nav-header">
-              <Link href="/">
+              <Link href="/" className="nav-brand">
                 <Image
-                  src="/asset/sinkot_logo.webp"
+                  src="/asset/sinkot_logo1.jpg"
                   alt="Sinclair McKinsley Logo"
                   width={150}
                   height={50}
