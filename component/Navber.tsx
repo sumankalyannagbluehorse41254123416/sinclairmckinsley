@@ -194,7 +194,7 @@ const Navbar: FC = () => {
     };
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 991);
       // Close menu when resizing to desktop
       if (window.innerWidth > 768) {
         setIsMenuOpen(false);
