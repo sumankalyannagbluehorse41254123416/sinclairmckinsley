@@ -1,0 +1,279 @@
+@media (max-width: 991px) {
+  header {
+    height: 68px !important;
+  }
+
+  .logo-adn a img {
+    height: 70px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    width: 325px;
+  }
+
+  .nav-menu>li>a {
+    font-size: 21px;
+  }
+
+  .nav-menu>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
+    /* color: #343a40;
+    text-transform: uppercase */
+  }
+
+  .fottr_logo {
+    width: 100%;
+    height: unset;
+  }
+
+  .contact_header ul {
+    display: unset !important;
+  }
+
+  .header_social ul {
+    margin-left: 30%;
+  }
+
+  .top_header {
+    height: 51px;
+  }
+
+  .header .desk-menu .logo-adn {
+    margin: 0 0;
+  }
+
+  header .desk-menu .menu-container .menu-head .e1 img {
+    width: unset;
+    height: 40px;
+  }
+
+  .sinclair_img_side .img_2 {
+    position: relative;
+    left: 0%;
+    margin-top: 33px;
+  }
+
+  .sinclair_details {
+    padding: 61px 2px 2px 8px;
+  }
+
+  .Our_philoshopy_details h2 {
+    margin-top: -60px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .right_mark {
+    margin-top: 26px;
+    margin-left: 0px;
+  }
+
+  .blue_back {
+    height: unset;
+  }
+
+  .philod {
+    position: absolute;
+    left: 120px;
+    top: 215px;
+  }
+
+  .expr_img {
+    margin-left: -6px;
+  }
+
+  .new_li {
+    position: unset;
+    margin-top: 20px;
+    margin-bottom: 31px;
+  }
+
+  .expri_btn {
+    bottom: 168px;
+    left: 86px;
+  }
+
+  header .desk-menu .logo-adn {
+    z-index: unset;
+  }
+
+  .services {
+    margin-bottom: 20px;
+    z-index: unset;
+  }
+
+  /* .respon_serv {
+        margin-bottom: 30px !important;
+    } */
+  .header_social {
+    margin-left: -58px;
+  }
+
+  .contact_header {
+    margin-top: -26px;
+  }
+
+  .contact_header ul li {
+    line-height: 25px;
+  }
+
+  .mr {
+    margin-left: 0px;
+    margin-right: 13px;
+  }
+
+  .contact_header ul {
+    padding-left: unset !important;
+  }
+
+  .frm_section {
+    float: unset;
+  }
+
+  .go-top {
+    right: 14%;
+  }
+
+  .header_information h2 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+  }
+
+  .testim {
+    top: 256%;
+    right: 6%;
+  }
+
+  /* .about-company {
+        margin-top: 80px;
+    } */
+  .links {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+  }
+
+  .location {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .header_information p {
+    max-width: 330px;
+  }
+
+  .footer {
+    /* margin-top: -186px !important; */
+  }
+
+  .img_1 {
+    display: none;
+  }
+
+  .slick-next {
+    right: -6px !important;
+  }
+
+  .slick-prev {
+    left: -4px !important;
+  }
+
+  .container_new {
+    margin-bottom: 50px;
+  }
+
+  .cs-blog-detail {
+    /* margin-bottom: 225px; */
+  }
+
+  .text-white-50 {
+    width: 340px;
+  }
+
+  .slide_banner img {
+    height: 280px;
+  }
+
+  .servicea_details {
+    height: 260px !important;
+  }
+
+  .making_na {
+    margin-top: -70px !important;
+  }
+
+  .popup_main {
+    width: 100% !important;
+  }
+
+  .load_more {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sinclair_img_side {
+    margin-top: -190px;
+  }
+
+  .about-section .content-column {
+    margin-top: 80px;
+    margin-bottom: unset;
+  }
+
+  .about-section .content-column .inner-column {
+    padding-left: unset;
+  }
+
+  .about-section {
+    padding: 20px 0 0px;
+  }
+
+  .mainBlog p {
+    text-align: justify;
+  }
+
+  .about_us_box {
+    margin-top: unset;
+  }
+
+  .our p {
+    text-align: justify;
+  }
+
+  .about_join {
+    height: 130px;
+    text-align: center;
+  }
+
+  .join_text h4 {
+    float: unset;
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .join_text a {
+    float: unset;
+    margin-right: unset;
+  }
+
+  .footer_icon_box {
+    margin-top: -25px;
+  }
+}
