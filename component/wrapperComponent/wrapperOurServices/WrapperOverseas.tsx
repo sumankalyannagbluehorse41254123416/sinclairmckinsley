@@ -1,5 +1,5 @@
 // import Overseas from "@/component/OurServicesComponent/Overseas /Overseas ";
-import Overseas from "@/component/OurServicesComponent/Overseas /Overseas";
+import Overseas from "@/component/OurServicesComponent/Overseas/Overseas";
 import { OurServeice } from "@/lib/ourService";
 
 export default async function OverseasWrapper() {
