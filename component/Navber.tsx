@@ -256,9 +256,9 @@ const Navbar: FC = () => {
         <div className="container">
           <nav id="navigation1" className={`navigation ${navigationClass}`}>
             <div className="nav-header">
-              <Link href="/">
+              <Link href="/" className="nav-brand">
                 <Image
-                  src="/asset/sinkot_logo.webp"
+                  src="/asset/sinkot_logo1.jpg"
                   alt="Sinclair McKinsley Logo"
                   width={150}
                   height={50}
