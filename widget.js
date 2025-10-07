@@ -76,18 +76,12 @@
 
       const ipAddress = uniqueId;
 
-      let page_url = document.referrer;
-
-      if (!page_url) {
-        page_url = window.location.href;
-      }
-
       // Prepare payload for tracking views
       const payload = {
         widgetId,
         userId: user_id,
         viewsCount: 1,
-        url: page_url,
+        url: getCurrentUrl(),
         ipAddress,
         status,
       };
@@ -711,7 +705,7 @@
           body: JSON.stringify({
             widgetId: widgetId,
             userId: user_id,
-            url: window.location.href,
+            url: getCurrentUrl(),
             elementType,
             elementContent,
           }),
@@ -771,7 +765,7 @@
             widgetId: widgetId,
             userId: user_id,
             scrollCount: scrollCount,
-            url: window.location.href,
+            url: getCurrentUrl(),
             uniqueId: uniqueId,
           }),
         })
@@ -829,18 +823,12 @@
 
       const ipAddress = uniqueId;
 
-      // For observation
-      const isInIframe = window.self !== window.top;
-      const embedUrl = isInIframe
-        ? document.referrer || window.location.href
-        : window.location.href;
-
       // Prepare payload for tracking views
       const payload = {
         widgetId,
         userId: user_id,
         viewsCount: 1,
-        url: embedUrl,
+        url: getCurrentUrl(),
         ipAddress,
         status,
       };
@@ -1023,6 +1011,8 @@
         widget.innerHTML = "";
       }
 
+      widgetState.hasBeenEdited = true;
+
       renderLayout(widget, widgetState);
       applySettings(widget, widgetState);
 
@@ -1047,6 +1037,15 @@
     tempDiv.innerHTML = htmlString;
     const renderedText = tempDiv.textContent || tempDiv.innerText || "";
     return renderedText.length;
+  }
+
+  function getCurrentUrl() {
+    const isInIframe = window.self !== window.top;
+    let embedUrl = isInIframe
+      ? document.referrer || window.location.href
+      : window.location.href;
+    embedUrl = (embedUrl || "").split("?")[0];
+    return embedUrl;
   }
   function skGetEnvironmentUrls(folder_name) {
     // auto detect live and dev version
@@ -1162,7 +1161,6 @@
   }
 
   function initWidget() {
-    widgetLoaded = 1;
     var url = "https://widgets.sociablekit.com/";
     const localHost = ["127.0.0.1", "::1"];
 
@@ -1174,6 +1172,7 @@
       url = "https://localtesting.com/SociableKIT_Widgets/";
     }
     document.querySelectorAll(".sk-ww-google-reviews").forEach(function (el) {
+      widgetLoaded = 1;
       let google_reviews = el;
 
       const { showLoader, hideLoader } = skLoader(google_reviews);
@@ -1275,5 +1274,5 @@
     if (widgetLoaded == 0) {
       initWidget();
     }
-  }, 500);
+  }, 3000);
 })(window, document);
