@@ -39,18 +39,18 @@ export async function fetchAllBanners({
     "x-host": host || "localhost:3000",
   };
 
-  console.log("==== DEBUG fetchAllBanners ====");
-  console.log("Base URL:", baseUrl);
-  console.log("Final URL:", `${baseUrl}/banner/fetch-all-banner`);
-  console.log("Timestamp:", timeStamp);
-  console.log("Headers:", headers);
-  console.log("============================");
+  // console.log("==== DEBUG fetchAllBanners ====");
+  // console.log("Base URL:", baseUrl);
+  // console.log("Final URL:", `${baseUrl}/banner/fetch-all-banner`);
+  // console.log("Timestamp:", timeStamp);
+  // console.log("Headers:", headers);
+  // console.log("============================");
 
   try {
     const response = await axios.get(`${baseUrl}/banner/fetch-all-banner`, {
       headers,
     });
-    console.log("API Response:", response.data);
+    // console.log("API Response:", response.data);
     return response.data;
   } catch (error: any) {
     console.error("Fetch error details:", {

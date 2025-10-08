@@ -48,7 +48,7 @@ export async function fetchNavber(
 
   try {
     const response = await axios.get(`${baseUrl}/menus/${uid}`, { headers });
-    console.log("API Response:", response.data);
+    // console.log("API Response:", response.data);
     return response.data;
   } catch (error: any) {
     console.error("Fetch error details:", {

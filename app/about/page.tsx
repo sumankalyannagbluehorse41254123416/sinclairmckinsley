@@ -206,6 +206,8 @@ export default async function AboutPage() {
                             "https://via.placeholder.com/400x400"
                           }
                           alt={section.title}
+                          width={400}
+                          height={400}
                           className="img-fluid rounded"
                         />
                       </figure>

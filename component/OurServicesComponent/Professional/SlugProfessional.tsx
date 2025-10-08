@@ -49,7 +49,7 @@ export const Professional = () => {
                 image: sub.image,
               })) || [],
           }));
-        console.log("mapped *********", mapped);
+        // console.log("mapped *********", mapped);
 
         setPageItems(mapped);
       } catch (error) {
