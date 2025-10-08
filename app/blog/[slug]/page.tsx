@@ -238,7 +238,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC, use, useEffect, useState } from "react";
 import { fetchBlogData } from "@/app/action/fetchBlogData";
 import { fetchBlogs, BlogPost } from "@/lib/blog";
 
@@ -278,12 +278,14 @@ interface ApiBlogPost {
   pageItemdataWithSubsection?: Subsection[];
 }
 
-const BlogDetailPage: FC<{ params: { slug: string } }> = ({ params }) => {
+const BlogDetailPage: FC<{ params: Promise<{ slug: string }> }> = ({
+  params,
+}) => {
   const [blogData, setBlogData] = useState<ApiBlogPost | null>(null);
   const [recentPosts, setRecentPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const blogSlug = params.slug;
+  const { slug: blogSlug } = use(params);
 
   // Fetch main blog data
   useEffect(() => {
