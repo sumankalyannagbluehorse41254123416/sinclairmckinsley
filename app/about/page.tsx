@@ -138,6 +138,7 @@
 
 // // export default page;
 import { aboutFetchData } from "@/lib/about";
+import Image from "next/image";
 import React from "react";
 
 export default async function AboutPage() {
@@ -146,7 +147,7 @@ export default async function AboutPage() {
   const sections = data?.pageItemdataWithSubsection || [];
   return (
     <main>
-      {sections.map((section: any, index: number) => {
+      {sections.map((section: Record<string, string>, index: number) => {
         // Hero section
         if (index === 0) {
           return (
@@ -199,7 +200,7 @@ export default async function AboutPage() {
                   <div className="image-column col-lg-5 col-md-12 col-sm-12">
                     <div className="inner-column">
                       <figure className="image-1">
-                        <img
+                        <Image
                           src={
                             section.image ||
                             "https://via.placeholder.com/400x400"

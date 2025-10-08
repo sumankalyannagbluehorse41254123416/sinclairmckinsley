@@ -1,11 +1,6 @@
 import axios from "axios";
 import crypto from "crypto";
 
-interface FetchAboutDataParams {
-  host?: string;
-  [key: string]: any;
-}
-
 interface ApiResponse {
   success?: boolean;
   data?: any;
