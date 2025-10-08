@@ -112,6 +112,8 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 <div className="right_img">
                   <Image
                     src={benefitsSection.image}
+                    height={400}
+                    width={400}
                     alt={benefitsSection.title || "Service image"}
                     style={{ width: "100%", height: "auto" }}
                   />
@@ -175,6 +177,8 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                     <div className="icon_img">
                       <Image
                         src={item.image}
+                        height={400}
+                        width={400}
                         alt={item.title}
                         style={{ maxWidth: "60px", height: "auto" }}
                       />
@@ -223,6 +227,8 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 <div className="contact_right">
                   <Image
                     src={ctaSection.image}
+                    height={400}
+                    width={400}
                     alt="Contact"
                     style={{ width: "100%", borderRadius: "8px" }}
                   />

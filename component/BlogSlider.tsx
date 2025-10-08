@@ -91,7 +91,7 @@
 //     },
 //     {
 //       href: "https://example.com/blog-3",
-//       img: "https://wip.tezcommerce.com:3304/admin/iUdyog/blog/70/1691992519667.jpg",
+//       : "https://wip.tezcommerce.com:3304/admin/iUdyog/blog/70/1691992519667.jpg",
 //       title: "Living in the biggest cities of the world",
 //     },
 //     {
