@@ -3,7 +3,6 @@
 // import Navbar from "@/component/Navber";
 // "use client";
 import BlogSlider from "@/component/BlogSlider";
-import LatestInformation from "@/component/Information";
 import OurServices from "@/component/OurServices";
 import ClientReview from "@/component/Review";
 // import Industries from "@/component/Industries";

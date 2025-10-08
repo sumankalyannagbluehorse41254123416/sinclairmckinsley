@@ -1,5 +1,6 @@
 import React from "react";
 import { fetchOurServeiceData } from "../action/fetchOurServiceData";
+import Image from "next/image";
 
 // Helper to safely render HTML content
 const RenderHTML = ({ html }: { html: string }) => {
@@ -109,7 +110,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             {benefitsSection?.image && (
               <div className="col-lg-5">
                 <div className="right_img">
-                  <img
+                  <Image
                     src={benefitsSection.image}
                     alt={benefitsSection.title || "Service image"}
                     style={{ width: "100%", height: "auto" }}
@@ -172,7 +173,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 <div className="col-lg-3 col-sm-12 mb-4" key={item.id}>
                   <div className="account_statement">
                     <div className="icon_img">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.title}
                         style={{ maxWidth: "60px", height: "auto" }}
@@ -220,7 +221,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             {ctaSection?.image && (
               <div className="col-lg-6">
                 <div className="contact_right">
-                  <img
+                  <Image
                     src={ctaSection.image}
                     alt="Contact"
                     style={{ width: "100%", borderRadius: "8px" }}
