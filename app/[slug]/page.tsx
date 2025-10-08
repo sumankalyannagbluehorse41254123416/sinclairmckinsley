@@ -32,7 +32,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const mainSection = pageItemdataWithSubsection.find(
     (item: any) => item.section_sequence === 1
   );
-  console.log("mainSection", mainSection);
+  // console.log("mainSection", mainSection);
   const benefitsSection = pageItemdataWithSubsection.find(
     (item: any) => item.section_sequence === 2
   );

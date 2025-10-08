@@ -48,7 +48,7 @@ export const FooterNavMenu = () => {
           const sortedItems = [...data.menu.items].sort(
             (a, b) => (a.sequence ?? 0) - (b.sequence ?? 0)
           );
-          console.log("sortedItems", sortedItems);
+          // console.log("sortedItems", sortedItems);
           setMenuItems(sortedItems);
         }
       } catch (error) {
