@@ -48,6 +48,7 @@ export const FooterNavMenu = () => {
           const sortedItems = [...data.menu.items].sort(
             (a, b) => (a.sequence ?? 0) - (b.sequence ?? 0)
           );
+          console.log("sortedItems", sortedItems);
           setMenuItems(sortedItems);
         }
       } catch (error) {
@@ -66,6 +67,8 @@ export const FooterNavMenu = () => {
             href={
               item.href.includes("#")
                 ? `/${item.href}`
+                : item.href === "/"
+                ? "/"
                 : `/${item.href} ` || "#"
             }>
             {item.title}
