@@ -7,8 +7,8 @@ const RenderHTML = ({ html }: { html: string }) => {
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
-const Page = async ({ params }: { params: { slug: string } }) => {
-  const serviceSlug = params.slug;
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug: serviceSlug } = await params;
 
   let data = null;
 
