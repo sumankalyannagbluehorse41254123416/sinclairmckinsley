@@ -7,7 +7,8 @@
 }
 
 .card-container {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 440px;
   background-color: #fff;
   border-radius: 8px;
@@ -22,6 +23,7 @@
   width: 100%;
   border-radius: 8px 8px 0 0;
   background-size: cover;
+  object-fit: cover;
 }
 
 .card-body {
@@ -93,7 +95,7 @@
 
 @media screen and (max-width: 1000px) {
   .container_new {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

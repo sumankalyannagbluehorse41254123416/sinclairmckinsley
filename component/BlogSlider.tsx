@@ -323,7 +323,7 @@ const BlogSlider = () => {
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={20}
           slidesPerView={3}
-          autoplay={{ delay: 30000, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           // pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",

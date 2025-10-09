@@ -16,6 +16,7 @@
 @media (max-width: 767px) {
   .card-container {
     width: 325px;
+    height: auto;
   }
 
   .nav-menu>li>a {
@@ -196,6 +197,7 @@
 
   .container_new {
     margin-bottom: 50px;
+    grid-template-columns: 1fr;
   }
 
   .cs-blog-detail {
