@@ -36,9 +36,20 @@ export async function fetchOurServeiceData(uid: string): Promise<ApiResponse> {
     "Content-Type": "application/json",
     "x-host": "localhost:3000",
   };
-
+  // try {
+  //     const response = await axios.get(
+  //       `${baseUrl}/page/fetch-single-page/${uid}`,
+  //       {
+  //         headers,
+  //       }
+  //     );
+  //       return response.data;
+  // } catch (error) {
+  //   console.log("error", error);
+  // }
   const response = await axios.get(`${baseUrl}/page/fetch-single-page/${uid}`, {
     headers,
   });
+  // console.log("response", response, uid);
   return response.data;
 }

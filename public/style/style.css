@@ -349,7 +349,7 @@ a {
   color: #000000;
 }
 
-.servies_card h6 {
+.servies_card h3 {
   font-size: 18px;
   font-weight: 600;
   margin-top: -14px;
@@ -995,6 +995,12 @@ background: #f1f1f1;
   height: 390px !important;
   overflow-y: scroll !important;
   scrollbar-width: thin;
+
+}
+
+.client_speak .WidgetBackground__Content-sc-e38729c4-2.WidgetBackground__ContentContainer-sc a {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 /* .sk-ww-google-reviews::-webkit-scrollbar{
