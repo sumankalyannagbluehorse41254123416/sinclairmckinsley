@@ -594,7 +594,9 @@ a {
   height: 260px;
   object-fit: cover;
 }
-
+.bg_information .customer-logos .swiper-initialized.swiper-horizontal{
+  padding: 0 25px;
+}
 .customer-logos :is(.swiper-button-prev, .swiper-button-next) svg {
   height: 16px;
   background-color: transparent;
@@ -614,7 +616,7 @@ a {
 
 .slide_new {
   margin: 20px 0;
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .icome {
@@ -629,7 +631,7 @@ a {
 @media (max-width:1199px) {
   .icome {
     padding: 14px 10px;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -1152,6 +1154,13 @@ body .sk-reviewer-pic img {
 
   .clients_wrap .bg_img {
     height: 842px;
+  }
+
+  .bg_information .customer-logos .swiper-initialized.swiper-horizontal{
+    padding: 0 14px;
+  }
+  .icome{
+    font-size: 10px;
   }
 }
 

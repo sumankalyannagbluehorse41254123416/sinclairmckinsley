@@ -999,4 +999,11 @@ html {
   transform-origin: 0 50%;
 }
 
+@media (max-width:575px){
+  .nav-brand img{
+    width: 210px;
+  }
+}
+
 /*  */
+
