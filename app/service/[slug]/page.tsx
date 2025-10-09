@@ -1,6 +1,7 @@
 import React from "react";
-import { fetchOurServeiceData } from "../action/fetchOurServiceData";
+
 import Image from "next/image";
+import { fetchOurServeiceData } from "@/app/action/fetchOurServiceData";
 
 // Helper to safely render HTML content
 const RenderHTML = ({ html }: { html: string }) => {
@@ -39,7 +40,6 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const ctaSection = pageItemdataWithSubsection.find(
     (item: any) => item.section_sequence === 3
   );
-
   const mainSubsections = pageItemdataWithSubsection.find(
     (item: any) => item.section_sequence === 1
   );

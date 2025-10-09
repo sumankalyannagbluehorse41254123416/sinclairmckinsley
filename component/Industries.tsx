@@ -269,7 +269,7 @@ const Industries: React.FC<IndustriesProps> = ({ sectionData }) => {
                   <div className="services_icon">
                     <img src={item.image} alt={item.title} />
                   </div>
-                  <h6>{item.title}</h6>
+                  <h3>{item.title}</h3>
                   <div dangerouslySetInnerHTML={{ __html: item.description }} />
                 </a>
               </div>

@@ -53,6 +53,7 @@
 // }
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 interface ServiceData {
@@ -73,13 +74,13 @@ const Peofessional: React.FC<OurServicesProps> = ({ service }) => {
       <div className="services_icon">
         <img src={service.cover_image_url} alt={service.title} />
       </div>
-      <h6>{service.title}</h6>
+      <h3>{service.title}</h3>
       <div dangerouslySetInnerHTML={{ __html: service.description }} />
       <div className="learn_more">
-        <a href={`/${service.slug}`}>
+        <Link href={`/service/${service.slug}`}>
           Learn More{" "}
           <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );
