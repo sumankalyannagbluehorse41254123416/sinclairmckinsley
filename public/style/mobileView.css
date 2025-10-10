@@ -235,7 +235,7 @@
   }
 
   .about-section .content-column {
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: unset;
   }
 
@@ -267,7 +267,7 @@
   .join_text h4 {
     float: unset;
     font-size: 20px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
   }
 
   .join_text a {

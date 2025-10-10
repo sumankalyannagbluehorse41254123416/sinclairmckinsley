@@ -442,7 +442,7 @@ a {
   color: #fff;
 }
 
-.servies_card:hover h6 {
+.servies_card:hover h3 {
   color: white;
 }
 
@@ -501,6 +501,10 @@ a {
 @media (max-width:991px) {
   .over_banner {
     height: fit-content !important;
+  }
+
+  .servies_card {
+    height: auto;
   }
 }
 
@@ -594,9 +598,11 @@ a {
   height: 260px;
   object-fit: cover;
 }
-.bg_information .customer-logos .swiper-initialized.swiper-horizontal{
+
+.bg_information .customer-logos .swiper-initialized.swiper-horizontal {
   padding: 0 25px;
 }
+
 .customer-logos :is(.swiper-button-prev, .swiper-button-next) svg {
   height: 16px;
   background-color: transparent;
@@ -1162,12 +1168,14 @@ body .sk-reviewer-pic img {
     height: 842px;
   }
 
-  .bg_information .customer-logos .swiper-initialized.swiper-horizontal{
+  .bg_information .customer-logos .swiper-initialized.swiper-horizontal {
     padding: 0 14px;
   }
-  .icome{
+
+  .icome {
     font-size: 10px;
   }
+  
 }
 
 @media (max-width: 560px) {
@@ -1822,6 +1830,20 @@ html {
   margin-bottom: 50px;
 }
 
+@media (max-width:991px){
+  .about-section .content-column{
+    margin-top: 115px;
+    margin-bottom: 0;
+  }
+  .about-section .content-column .inner-column{
+    padding-left: 0 !important;
+  }
+
+  .about_us_box{
+    margin-top: 0 !important;
+  }
+}
+
 .about-section .content-column .inner-column {
   position: relative;
   padding-left: 30px;
@@ -1919,10 +1941,14 @@ html {
   bottom: 0;
 }
 
+.about-section .image-column .image-1.about-img img{
+  object-position: top;
+}
+
 .about-section .image-column .image-2 img,
 .about-section .image-column .image-1 img {
   box-shadow: 0 30px 50px rgba(8, 13, 62, 0.15);
-  border-radius: 46px;
+  border-radius: 46px !important;
   width: 90%;
   height: 230px;
   object-fit: cover;
@@ -1938,6 +1964,28 @@ html {
   float: left;
   padding-top: 20px;
   font-size: 30px;
+}
+
+@media (max-width:991px){
+  .join_text h4{
+    font-size: 20px;
+  }
+
+  .join_text a {
+    margin-top: 15px !important;
+    padding: 10px 40px !important;
+}
+}
+
+@media (max-width:767px){
+  .join_text h4{
+    font-size: 16px;
+  }
+
+  .join_text a {
+    margin-top: 10px !important;
+    padding: 7px 30px !important;
+}
 }
 
 .join_text a {

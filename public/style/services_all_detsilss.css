@@ -100,6 +100,16 @@
   background-color: #f1f1f1;
 }
 
+@media (max-width:991px){
+  .account_statement{
+    height: auto;
+  }
+
+  .account_statement_box{
+    margin-top: 0;
+  }
+}
+
 .icon_logo {
   text-align: center;
   margin-bottom: 20px;
@@ -117,6 +127,7 @@
 
 .contact_right img {
   width: 100%;
+  object-fit: cover;
 }
 
 .mt_same {
@@ -161,6 +172,11 @@
     width: 330px;
     margin: 30px auto;
     padding: 20px;
+  }
+
+  .account_statement_box{
+    margin: 0 auto !important;
+    width: 100%;
   }
 
   .wpb_wrapper_1 h2 {
