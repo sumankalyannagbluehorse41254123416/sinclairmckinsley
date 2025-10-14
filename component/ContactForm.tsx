@@ -167,52 +167,54 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="col-lg-4 col-sm-12 location" id="contact-us">
-      <h4 className="mt-lg-0 mt-sm-3">Contact</h4>
-      <form id="contact_form" onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control name"
-            placeholder="Name*"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <span className="text-danger contact_gap">{errors.name}</span>
-        </div>
-        <div className="mb-3">
-          <input
-            type="email"
-            className="form-control email"
-            placeholder="Email*"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <span className="text-danger contact_gap">{errors.email}</span>
-        </div>
-        <div className="mb-3">
-          <textarea
-            placeholder="Message*"
-            className="form-control message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <span className="text-danger contact_gap">{errors.message}</span>
-        </div>
-        <div className="submit_btn">
-          <button
-            className="theme-btn btnfos btnfos-4 btn-4 g-recaptcha"
-            type="submit">
-            <span>SUBMIT</span>
-          </button>
-          <div className="text-info text-center contact_gap">{success}</div>
-          {errors.general && (
-            <div className="text-danger text-center contact_gap">
-              {errors.general}
-            </div>
-          )}
-        </div>
-      </form>
+    <div className="col-lg-4 col-sm-12" id="contact-us">
+      <div className=" location">
+        <h4 className="mt-lg-0 mt-sm-3">Contact</h4>
+        <form id="contact_form" onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <input
+              type="text"
+              className="form-control name"
+              placeholder="Name*"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <span className="text-danger contact_gap">{errors.name}</span>
+          </div>
+          <div className="mb-3">
+            <input
+              type="email"
+              className="form-control email"
+              placeholder="Email*"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <span className="text-danger contact_gap">{errors.email}</span>
+          </div>
+          <div className="mb-3">
+            <textarea
+              placeholder="Message*"
+              className="form-control message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <span className="text-danger contact_gap">{errors.message}</span>
+          </div>
+          <div className="submit_btn">
+            <button
+              className="theme-btn btnfos btnfos-4 btn-4 g-recaptcha"
+              type="submit">
+              <span>SUBMIT</span>
+            </button>
+            <div className="text-info text-center contact_gap">{success}</div>
+            {errors.general && (
+              <div className="text-danger text-center contact_gap">
+                {errors.general}
+              </div>
+            )}
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
