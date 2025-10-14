@@ -12,7 +12,7 @@ import Copyright from "./copyright";
 <CgMail />;
 const Footer: FC = () => {
   return (
-    <div className="pt-5 pb-5 footer">
+    <div className="pt-5 footer">
       <div className="container footer_icon_box">
         <div className="row">
           <div className="col-lg-5 col-xs-12 about-company">
