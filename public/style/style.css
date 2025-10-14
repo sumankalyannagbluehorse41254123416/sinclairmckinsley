@@ -115,6 +115,10 @@ a {
     margin-bottom: 60px;
   }
 
+  .philoshopy_cl {
+    margin-top: 0 !important;
+  }
+
   .about-company .footer_first_content {
     flex-direction: column-reverse !important;
   }
@@ -129,10 +133,15 @@ a {
 }
 
 @media (max-width:767px) {
+  .philoshopy_cl {
+    margin-top: 80px !important;
+  }
+
   .services {
     margin-top: 30px !important;
   }
-  .about_join{
+
+  .about_join {
     height: auto !important;
     padding: 10px 0;
   }
