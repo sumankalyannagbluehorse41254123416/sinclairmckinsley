@@ -15,7 +15,8 @@
 
 @media (max-width: 767px) {
   .card-container {
-    width: 325px;
+    /* width: 325px; */
+    width: 100%;
     height: auto;
   }
 
@@ -162,7 +163,7 @@
     } */
   .links {
     margin-top: 20px !important;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 
   .location {
@@ -230,8 +231,39 @@
 }
 
 @media (max-width: 575px) {
+  #about_welcome.paddy40{
+    padding: 70px 0px 10px;
+  }
+  #our_services {
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
   .sinclair_img_side {
     margin-top: -190px;
+  }
+
+  #Latest_information .header_information {
+    margin-top: 5px;
+  }
+
+  #about_welcome {
+    margin-top: 80px;
+  }
+
+  #about_welcome .sinclair_details {
+    padding: 30px 2px 2px 8px;
+  }
+
+  #about_welcome .sinclair_details h6 {
+    margin-bottom: 0px;
+  }
+
+  #about_welcome .sinclair_details h2 {
+    margin-bottom: 15px;
+  }
+
+  .expri_btn a {
+    font-size: 15px;
   }
 
   .about-section .content-column {
@@ -262,12 +294,14 @@
   .about_join {
     height: 130px;
     text-align: center;
+    padding: 20px 0;
   }
 
   .join_text h4 {
     float: unset;
     font-size: 20px;
     /* padding-bottom: 25px; */
+    padding-top: 0;
   }
 
   .join_text a {
@@ -277,5 +311,11 @@
 
   .footer_icon_box {
     margin-top: -25px;
+  }
+}
+
+@media (max-width:375px){
+  .philod{
+    left: 90px;
   }
 }

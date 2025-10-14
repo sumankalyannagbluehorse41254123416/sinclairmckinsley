@@ -111,6 +111,14 @@ a {
 }
 
 @media (max-width:991px) {
+  .footer_icon_box .links {
+    margin-bottom: 60px;
+  }
+
+  .about-company .footer_first_content {
+    flex-direction: column-reverse !important;
+  }
+
   .services {
     margin-top: 30px !important;
   }
@@ -123,6 +131,10 @@ a {
 @media (max-width:767px) {
   .services {
     margin-top: 30px !important;
+  }
+  .about_join{
+    height: auto !important;
+    padding: 10px 0;
   }
 }
 
@@ -499,6 +511,18 @@ a {
 }
 
 @media (max-width:991px) {
+  .expr_img {
+    margin-left: 0;
+  }
+
+  .new_li {
+    left: 270px;
+  }
+
+  .blue_back {
+    height: 500px;
+  }
+
   .over_banner {
     height: fit-content !important;
   }
@@ -1175,7 +1199,7 @@ body .sk-reviewer-pic img {
   .icome {
     font-size: 10px;
   }
-  
+
 }
 
 @media (max-width: 560px) {
@@ -1830,16 +1854,17 @@ html {
   margin-bottom: 50px;
 }
 
-@media (max-width:991px){
-  .about-section .content-column{
+@media (max-width:991px) {
+  .about-section .content-column {
     margin-top: 115px;
     margin-bottom: 0;
   }
-  .about-section .content-column .inner-column{
+
+  .about-section .content-column .inner-column {
     padding-left: 0 !important;
   }
 
-  .about_us_box{
+  .about_us_box {
     margin-top: 0 !important;
   }
 }
@@ -1941,7 +1966,7 @@ html {
   bottom: 0;
 }
 
-.about-section .image-column .image-1.about-img img{
+.about-section .image-column .image-1.about-img img {
   object-position: top;
 }
 
@@ -1966,26 +1991,26 @@ html {
   font-size: 30px;
 }
 
-@media (max-width:991px){
-  .join_text h4{
+@media (max-width:991px) {
+  .join_text h4 {
     font-size: 20px;
   }
 
   .join_text a {
     margin-top: 15px !important;
     padding: 10px 40px !important;
-}
+  }
 }
 
-@media (max-width:767px){
-  .join_text h4{
+@media (max-width:767px) {
+  .join_text h4 {
     font-size: 16px;
   }
 
   .join_text a {
     margin-top: 10px !important;
     padding: 7px 30px !important;
-}
+  }
 }
 
 .join_text a {
@@ -2055,6 +2080,11 @@ html {
 
 .footer_contact {
   padding-left: unset !important;
+}
+
+.about-company .footer_first_content {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_contact li {
