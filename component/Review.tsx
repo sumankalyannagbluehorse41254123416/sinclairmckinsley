@@ -19,16 +19,18 @@ const ClientReview: React.FC = () => {
         <section id="testim" className="testim">
           <div className="wrap">
             {/* Google Reviews widget container */}
-            {/* <div
+            <div
               className="sk-ww-google-reviews"
-              data-embed-id="25448665"></div> */}
-
+              data-embed-id="25448665"></div>
+            <script
+              src="https://widgets.sociablekit.com/google-reviews/widget.js"
+              defer></script>
             {/* Load widget script */}
             {/* <Script src="../widget/widget.js" strategy="lazyOnload" /> */}
-            <script src="https://elfsightcdn.com/platform.js" async></script>
+            {/* <script src="https://elfsightcdn.com/platform.js" async></script>
             <div
               className="elfsight-app-67fe637b-d796-44f2-861d-750e7d061636 client_speak"
-              data-elfsight-app-lazy></div>
+              data-elfsight-app-lazy></div> */}
           </div>
         </section>
       </div>
@@ -98,3 +100,4 @@ export default ClientReview;
 // };
 
 // export default ClientReview;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
