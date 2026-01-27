@@ -27,7 +27,7 @@
   margin-top: 0px;
   font-size: 42px;
   text-transform: uppercase;
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 .all_heading {
@@ -100,6 +100,25 @@
   background-color: #f1f1f1;
 }
 
+@media (max-width:991px) {
+  .wpb_wrapper_1 {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+
+  .contact_pay {
+    margin-bottom: 45px;
+  }
+
+  .account_statement {
+    height: auto;
+  }
+
+  .account_statement_box {
+    margin-top: 0;
+  }
+}
+
 .icon_logo {
   text-align: center;
   margin-bottom: 20px;
@@ -117,6 +136,7 @@
 
 .contact_right img {
   width: 100%;
+  object-fit: cover;
 }
 
 .mt_same {
@@ -153,6 +173,14 @@
 }
 
 @media (max-width: 767px) {
+  .wpb_wrapper_1 {
+    margin-top: 50px !important;
+  }
+
+  .contact_pay {
+    margin-bottom: 0;
+  }
+
   .any_one {
     font-size: 28px !important;
   }
@@ -163,6 +191,11 @@
     padding: 20px;
   }
 
+  .account_statement_box {
+    margin: 0 auto !important;
+    width: 100%;
+  }
+
   .wpb_wrapper_1 h2 {
     margin-top: -110px !important;
     font-size: 28px !important;
@@ -170,7 +203,7 @@
   }
 
   .contact_right {
-    margin-bottom: 212px;
+    /* margin-bottom: 212px; */
     margin-top: 60px;
   }
 }

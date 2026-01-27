@@ -173,7 +173,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             <div className="row">
               {benefitsSection.subsections.map((item: any) => (
                 <div className="col-lg-3 col-sm-12 mb-4" key={item.id}>
-                  <div className="account_statement">
+                  <div className="account_statement account_statement_box">
                     <div className="icon_img">
                       <Image
                         src={item.image}

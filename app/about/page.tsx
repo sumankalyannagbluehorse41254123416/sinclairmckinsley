@@ -199,7 +199,7 @@ export default async function AboutPage() {
                   {/* Image Column */}
                   <div className="image-column col-lg-5 col-md-12 col-sm-12">
                     <div className="inner-column">
-                      <figure className="image-1">
+                      <figure className="image-1 about-img">
                         <Image
                           src={
                             section.image ||
