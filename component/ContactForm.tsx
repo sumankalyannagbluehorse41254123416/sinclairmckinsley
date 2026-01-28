@@ -373,13 +373,9 @@ export default function ContactForm() {
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedMessage = message.trim();
-
-    // Name validation
     if (!trimmedName) {
       newErrors.name = "Please fill out your full name";
     }
-
-    // Email validation
     if (!trimmedEmail) {
       newErrors.email = "Please fill out your email address";
     } else {
@@ -388,21 +384,13 @@ export default function ContactForm() {
         newErrors.email = "Please enter a valid email address";
       }
     }
-
-    // Message validation
     if (!trimmedMessage) {
       newErrors.message = "Please fill out your message";
     }
-
-    // Stop if validation errors exist
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-
-      // setTimeout(() => setErrors({}), 3000);
       return;
     }
-
-    // Submit form
     try {
       const response = await submitFormData(
         {},
@@ -435,7 +423,6 @@ export default function ContactForm() {
       <h4 className="mt-lg-0 mt-sm-3">Contact</h4>
 
       <form id="contact_form" onSubmit={handleSubmit} noValidate>
-        {/* Name */}
         <div className="mb-3">
           <input
             type="text"
@@ -448,8 +435,6 @@ export default function ContactForm() {
             <span className="text-danger contact_gap">{errors.name}</span>
           )}
         </div>
-
-        {/* Email */}
         <div className="mb-3">
           <input
             type="email"
@@ -462,8 +447,6 @@ export default function ContactForm() {
             <span className="text-danger contact_gap">{errors.email}</span>
           )}
         </div>
-
-        {/* Message */}
         <div className="mb-3">
           <textarea
             className="form-control message"
@@ -475,8 +458,6 @@ export default function ContactForm() {
             <span className="text-danger contact_gap">{errors.message}</span>
           )}
         </div>
-
-        {/* Submit */}
         <div className="submit_btn">
           <button
             type="submit"
